@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="atm">
+        <div class="atm-display">
+          <div class="atm-options-column">
+            <div class="atm-option"></div>
+            <div class="atm-option"></div>
+            <div class="atm-option"></div>
+            <div class="atm-option"></div>
+          </div>
+          <div class="atm-screen-container">
+            <div class="atm-screen">
+              <p class="atm-title" id="mainTitle">Ingrese PIN</p>
+              <input type="text" id="mainInput" readonly />
+            </div>
+            <div class="atm-card-reader"></div>
+          </div>
+          <div class="atm-options-column">
+            <div class="atm-option"></div>
+            <div class="atm-option"></div>
+            <div class="atm-option"></div>
+            <div class="atm-option"></div>
+          </div>
+        </div>
+        <div class="atm-separator-1"></div>
+        <div class="atm-separator-2"></div>
+        <div class="atm-keyboard">
+          <div class="atm-key-container">
+            <div class="atm-key" onclick="keyBoardInput(1)">1</div>
+            <div class="atm-key" onclick="keyBoardInput(2)">2</div>
+            <div class="atm-key" onclick="keyBoardInput(3)">3</div>
+            <div class="atm-key" onclick="keyBoardInput(4)">4</div>
+            <div class="atm-key" onclick="keyBoardInput(5)">5</div>
+            <div class="atm-key" onclick="keyBoardInput(6)">6</div>
+            <div class="atm-key" onclick="keyBoardInput(7)">7</div>
+            <div class="atm-key" onclick="keyBoardInput(8)">8</div>
+            <div class="atm-key" onclick="keyBoardInput(9)">9</div>
+            <div class="atm-key"></div>
+            <div class="atm-key" onclick="keyBoardInput(0)">0</div>
+            <div class="atm-key"></div>
+          </div>
+          <div class="atm-options-container">
+            <div class="atm-option-key" onclick="cleanInput()">CANCEL</div>
+            <div class="atm-option-key" onclick="">CONFIRMATION</div>
+            <div class="atm-option-key">&nbsp</div>
+            <div class="atm-option-key" onclick="checkPin()">ENTER</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../utils/keyboard.js"></script>
+    <script src="../js/pinConfirmation.js"></script>
+  </body>
+</html>

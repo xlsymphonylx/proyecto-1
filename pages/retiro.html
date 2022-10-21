@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/retire.css" />
+
+    <link rel="stylesheet" href="../css/menu.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="atm">
+        <div class="atm-display">
+          <div class="atm-options-column">
+            <div class="atm-option" onclick="setAmount(100)"></div>
+            <div class="atm-option" onclick="setAmount(200)"></div>
+            <div class="atm-option" onclick="setAmount(300)"></div>
+            <div class="atm-option" onclick="setAmount(400)"></div>
+          </div>
+          <div class="atm-screen-container">
+            <div class="atm-screen">
+              <div class="atm-retire-options">
+                <div class="atm-screen-options">
+                  <div class="atm-screen-option">100</div>
+                  <div class="atm-screen-option">200</div>
+                  <div class="atm-screen-option">300</div>
+                  <div class="atm-screen-option">400</div>
+                </div>
+                <div class="atm-screen-options">
+                  <div class="atm-screen-option">500</div>
+                  <div class="atm-screen-option">1000</div>
+                  <div class="atm-screen-option">2000</div>
+                  <div class="atm-screen-option">VARIABLE</div>
+                </div>
+              </div>
+            </div>
+            <div class="atm-card-reader"></div>
+          </div>
+          <div class="atm-options-column">
+            <div class="atm-option" onclick="setAmount(500)"></div>
+            <div class="atm-option" onclick="setAmount(1000)"></div>
+            <div class="atm-option" onclick="setAmount(2000)"></div>
+            <div class="atm-option" onclick="goToRoute('variable.html')"></div>
+          </div>
+        </div>
+        <div class="atm-separator-1"></div>
+        <div class="atm-separator-2"></div>
+        <div class="atm-keyboard">
+          <div class="atm-key-container">
+            <div class="atm-key" onclick="keyBoardInput(1)">1</div>
+            <div class="atm-key" onclick="keyBoardInput(2)">2</div>
+            <div class="atm-key" onclick="keyBoardInput(3)">3</div>
+            <div class="atm-key" onclick="keyBoardInput(4)">4</div>
+            <div class="atm-key" onclick="keyBoardInput(5)">5</div>
+            <div class="atm-key" onclick="keyBoardInput(6)">6</div>
+            <div class="atm-key" onclick="keyBoardInput(7)">7</div>
+            <div class="atm-key" onclick="keyBoardInput(8)">8</div>
+            <div class="atm-key" onclick="keyBoardInput(9)">9</div>
+            <div class="atm-key"></div>
+            <div class="atm-key" onclick="keyBoardInput(0)">0</div>
+            <div class="atm-key"></div>
+          </div>
+          <div class="atm-options-container">
+            <div class="atm-option-key" onclick="cleanInput()">CANCEL</div>
+            <div class="atm-option-key" onclick="">CONFIRMATION</div>
+            <div class="atm-option-key">&nbsp</div>
+            <div class="atm-option-key" onclick="">ENTER</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../utils/keyboard.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/retiro.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+.atm-screen-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  text-align: left !important;
+  padding-bottom: 4rem;
+}
+.atm-screen-option {
+  padding: 1rem;
+  background-color: aliceblue;
+  width: 12rem;
+  font-weight: bold;
+  border-radius: 1rem;
+}
+
+.atm-screen-option:not(.atm-screen-option:first-child) {
+  margin-top: 1rem;
+}

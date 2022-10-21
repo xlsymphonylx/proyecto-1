@@ -1,0 +1,6 @@
+.atm-retire-options {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4rem;
+  margin-left: -.5rem;
+}
