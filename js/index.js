@@ -2,8 +2,8 @@
   if (!localStorage.getItem("tarjetas")) {
     const tajertas = [
       {
-        numero: "1",
-        pin: "1",
+        numero: "090922951",
+        pin: "2020",
         quetzales: "10000",
         dolares: "2000",
       },
